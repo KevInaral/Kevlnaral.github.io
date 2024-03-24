@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Fondo de la página de login de gris claro */
+}
+
+.principal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c8c8e2; /* Actualizado a un gris azulado */
+  padding: 40px 140px; /* Agregado relleno */
+}
+
+.contenedor {
+  width: 85%;
+  height: 85%;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 3px 5px 20px 0px #00000032; /* Añadida sombra */
+  border-radius: 15px; /* Redondea todas las esquinas */
+  position: relative; /* Agregado para posicionar los botones correctamente */
+}
+
+.logo {
+  /*flex: 1;  Hace que el div del logo ocupe la mitad del contenedor */
+  height: 100%;
+  width: 35%;
+  background-color: #e6e6f0; /* Actualizado a un tono de gris azulado */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row; /* Alinear elementos horizontalmente */
+  padding: 20px; /* Añadido relleno */
+  border-radius: 15px 0 0 15px; /* Redondea solo las esquinas izquierdas */
+}
+
+.logo-text {
+  flex: 1; /* El texto ocupa todo el espacio disponible horizontalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinear elementos desde la parte superior */
+  align-items: flex-start; /* Alinear elementos desde la parte izquierda */
+}
+
+.logo-text h1 {
+  font-size: 1rem; /* Tamaño de fuente reducido */
+}
+
+.logo-image {
+  display: flex;
+  justify-content: 25px; /* Centra horizontalmente la imagen */
+  align-items: center; /* Centra verticalmente la imagen */
+}
+
+.logo img {
+  max-width: 80%; /* Ajusta el tamaño máximo del logotipo */
+  height: auto; /* Altura automática */
+}
+
+.form {
+  flex: 1; /* Hace que el div del formulario ocupe la otra mitad del contenedor */
+  height: 100%;
+  background-color: #fff;
+  padding: 30px; /* Añadido relleno */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 15px 15px 0; /* Redondea solo las esquinas derechas */
+  position: relative; /* Agregado para posicionar los botones correctamente */
+}
+
+.form form {
+  width: 80%;
+}
+
+.form label {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #9dec80;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forgot-password {
+  margin-top: 16px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #6c5ce7;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Centra los enlaces horizontalmente */
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.top-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.top-button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: none; /* Eliminar el borde */
+  color: #6c5ce7; /* Color de texto morado */
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Agregar transición */
+}
+
+.top-button:hover {
+  background-color: #6c5ce7; /* Cambiar el color de fondo al morado */
+  color: #fff; /* Cambiar el color del texto a blanco */
+}
+
